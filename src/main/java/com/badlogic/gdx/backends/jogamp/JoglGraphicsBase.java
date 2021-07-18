@@ -79,6 +79,7 @@ public abstract class JoglGraphicsBase implements Graphics, GLEventListener {
 			try {
 				caps = new GLCapabilities(GLProfile.get(GLProfile.GL2));
 			} catch (GLException e) {
+				System.out.println("GL ERROR!!");
 				caps = new GLCapabilities(GLProfile.get(GLProfile.GLES2));
 			}
 		}
